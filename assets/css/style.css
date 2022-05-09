@@ -21,7 +21,6 @@ body {
 
 li{
     list-style:none;
-    
 }
 
 h1{
@@ -40,8 +39,9 @@ p{
     font-size: 13px;
 }
 
-li a > span{
+li a{
     display:block;
+    max-width: fit-content;
     width:30%;
     text-align:center;
     font-weight:700;
@@ -51,25 +51,33 @@ li a > span{
     text-transform:uppercase;
     transition:.25s;
     padding-left: 2vw;
-    
 }
 
-.menu > span{
+.menu{
+    width:500px;
     border-radius:10px;
     overflow:hidden;
-    width: 30px;
+    max-width: fit-content;
 }
 
-.menu li:first-child > span:hover ~ .bg {
+
+.menu li:first-child a {  background:# !important;}
+.menu li:nth-child(2) a {  background:# !important;}
+.menu li:nth-child(3) a {  background:# !important;}
+.menu li:nth-child(4) a {  background:# !important;}
+
+
+.menu li:first-child:hover ~ .bg {
     background: #ff6d6d;
+
 }
-.menu li:nth-child(2) span:hover ~ .bg {
+.menu li:nth-child(2):hover ~ .bg {
     background: #6dffb9;
 }
-.menu li:nth-child(3) span:hover ~ .bg {
+.menu li:nth-child(3):hover ~ .bg {
     background: #6dcaff;
 }
-.menu li:nth-child(4) span:hover ~ .bg {
+.menu li:nth-child(4):hover ~ .bg {
     background: #8479E1;
 }
 
