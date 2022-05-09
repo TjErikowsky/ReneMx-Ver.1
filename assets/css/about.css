@@ -1,0 +1,120 @@
+body{
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #fff;
+    height: auto;
+    width: auto;
+}
+
+.heading{
+    padding-top: 1.2vh;
+    text-align: center;
+    font-size: 3em;
+}
+
+.abstract-text{
+    padding-left: 30%;
+    width: 40%;
+    height: auto;
+    font-size: 1.2em;
+    line-height: 30px;
+}
+
+/* ANIMATED BACKROUND START */
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: red;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+
+.circles li:nth-child(7){
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+/* ANIMATED BACKROUND START */
+
+/* LINKS ANIMATION START */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+  
+a {
+    background:
+      linear-gradient(
+        to right,
+        rgba(239, 46, 68, 0.1),
+        rgba(239, 46, 70, 0.1)
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        rgba(255, 0, 180, 1),
+        rgba(0, 100, 200, 1)
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+  
+a:hover {
+    background-size: 0 3px, 100% 3px;
+}
+  
+/* LINKS ANIMATION ENDS */
+
+.footer{
+    text-align: center;
+    padding-top: 1vh;
+}

@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.bg {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: .15s;
+    pointer-events: none;
+}
+
+li{
+    list-style:none;
+    
+}
+
+h1{
+    margin-top: 8vh;
+    margin-left: 10vw;
+}
+
+h3{
+    margin-left: 10vw;
+    padding-bottom: 2vh;
+}
+
+p{
+    margin-left: 10vw;
+    padding-bottom: 4vh;
+    font-size: 13px;
+}
+
+li a > span{
+    display:block;
+    width:30%;
+    text-align:center;
+    font-weight:700;
+    font-size: 4em;
+    color:#000;
+    text-decoration:none;
+    text-transform:uppercase;
+    transition:.25s;
+    padding-left: 2vw;
+    
+}
+
+.menu > span{
+    border-radius:10px;
+    overflow:hidden;
+    width: 30px;
+}
+
+.menu li:first-child > span:hover ~ .bg {
+    background: #ff6d6d;
+}
+.menu li:nth-child(2) span:hover ~ .bg {
+    background: #6dffb9;
+}
+.menu li:nth-child(3) span:hover ~ .bg {
+    background: #6dcaff;
+}
+.menu li:nth-child(4) span:hover ~ .bg {
+    background: #8479E1;
+}
+
+.menu li:first-child a:hover {
+    color: #fff;
+
+}
+.menu li:nth-child(2) a:hover {
+    color: #fff;
+}
+.menu li:nth-child(3) a:hover {
+    color: #fff;
+}
+.menu li:nth-child(4) a:hover {
+    color: #fff;
+}
+
+.icons {
+    width: 70px;
+    height: 70px;
+    margin-left: 2em;
+}
+
+#instagram{
+    padding-top: 500px;
+}
